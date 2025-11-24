@@ -53,27 +53,27 @@ Você pode verificar a instalação com:
 idf.py --version
 ```
 
-# 🚀 4. ¿Cómo funciona un proyecto RTOS en ESP32?
+# 🚀 4. Como funciona um projeto RTOS no ESP32?
 
-En un proyecto RTOS con FreeRTOS, **todo gira alrededor de tareas (tasks)**.
+Em um projeto baseado em FreeRTOS, **tudo gira em torno de tarefas (tasks)**.
 
-## 📌 ¿Qué es una tarea?
+## 📌 O que é uma tarefa?
 
-Una **tarea** es una función que **nunca termina** y que FreeRTOS ejecuta en paralelo con otras tareas.  
-Cada tarea tiene su propia **prioridad**, **pila** y **ciclo de ejecución**.
+Uma **tarefa** é uma função que **nunca termina** e que o FreeRTOS executa em paralelo com outras tarefas.  
+Cada tarefa possui sua própria **prioridade**, **stack** e **ciclo de execução**.
 
 ---
 
-## 🧩 Estructura básica de una tarea
+## 🧩 Estrutura básica de uma tarefa
 
-Una tarea siempre sigue este formato:
+Uma tarefa sempre segue este formato:
 
 ```c
 void mi_tarea(void *pvParameters) {
     while (1) {
-        // Código a ejecutar continuamente
+        // Código a executar continuamente
 
-        vTaskDelay(1000 / portTICK_PERIOD_MS); // Espera 1s sin bloquear la CPU
+        vTaskDelay(1000 / portTICK_PERIOD_MS); // Espera 1s sem bloquear a CPU
     }
-} 
+}
 ```
