@@ -39,6 +39,7 @@ Exemplos de funções básicas:
 xTaskCreate();
 vTaskDelay();
 xQueueCreate();
+```
 
 # ⚙️ 3. Requisitos para começar
 
@@ -50,6 +51,7 @@ Você pode verificar a instalação com:
 
 ```bash
 idf.py --version
+```
 
 # 🚀 4. ¿Cómo funciona un proyecto RTOS en ESP32?
 
