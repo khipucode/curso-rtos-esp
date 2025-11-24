@@ -77,3 +77,6 @@ void mi_tarea(void *pvParameters) {
     }
 }
 ```
+
+CHAT GPT:
+https://chatgpt.com/c/6922885e-44f8-8331-800f-26253ec7a0ef
